@@ -1,0 +1,182 @@
+<!Doctype>
+<html>
+<head>
+<style>
+body{
+	background-color:	#008080; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+h1{
+	color: 		#FFFFFF;
+	margin-top:30px;
+	
+	
+}
+
+
+h2{
+	color:#FFC0CB;
+	margin-top:30px;
+	
+	
+}
+
+p{
+	color: black;             
+	font-size: 15px;
+	text-indent:30px;
+}
+.container{
+  width:200px;
+   margin: 20px 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li{
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left:10px;
+
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pasif {
+position relative;
+
+
+}
+
+header nav ul li:hover a,
+header nav ul li.aktif a{
+  background-color: #910a60;
+  color:white;
+}
+
+a.buton{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
+
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
+
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
+
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+    
+   
+    
+  </header>
+ </div>
+
+	<h1>Olaylar (Events)<h1>
+	<p>Bir butonun tıklandığında olanlar, fare imlecini bir nesnenin üzerine götürdüğünüzde ve benzeri olanlar olay olarak adlandırılır.</p>
+	<p>HTML'de pek çok olay mevcuttur.</p>
+	
+	<h2>HTML Olaylar<h2>
+	
+<p>Bir HTML olayı, tarayıcının ya da kullanıcının yaptığı harekettir.</p> 
+
+<p>•HTML sayfasının yüklenmesinin bitmesi bir olaydır.</p>
+<p>•Kullanıcının bir HTML textbox yani metin kutusuna bir şeyler girmesi bir olaydır.</p>
+<p>•Bir HTML butonun tıklanması bir olaydır.</p>
+<p>JavaScript bu olayları denetler ve biz istediğimizde bu olayın ardından yazdığımız JavaScript kodunu çalıştırır.</p>
+<p>Herhangi bir HTML elementinin olayını yakalamak için şu söz dizimini kullanırız:</p>
+
+<img src="images/kod15.PNG">	
+
+
+<p>Örneğin bir buton tıklandığında ekrana merhaba mesajı gelsin istiyorsak:<p>
+
+<img src="images/kod16.PNG">	<p>kodunu kullanabiliriz.<p>
+
+<br>&nbsp;
+
+<a class="buton" href="olaylar_ornek_1.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>Yukarıdaki örnekte buton tıklandığında ekran bir merhaba yazan bir mesaj kutusu gelir.</p>
+<br>&nbsp;
+
+
+<p>Aşağıdaki örnekte JavaScript ile bir elementin zemin rengini değiştiriyoruz:</p>
+
+<a class="buton" href="olaylar_ornek_2.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>Yukarıdaki örnekte buton tıklandığında ekran bir merhaba yazan bir mesaj kutusu gelir.</p>
+<br>&nbsp;
+
+
+<p>***Aşağıda yaygın olarak kullanılan HTML olaylarını bulabilirsiniz:</p>
+<img src="images/kod17.PNG">
+
+<br>&nbsp;
+
+	<h1>JavaScript Ne Yapabilir?<h1>
+	<p>***Olay işleyiciler (event handlers) ile kullanıcıdan alınan veriler işlenebilir, konrol edilebilir, yönetilebilir ve tarayıcı hareketleri kontrol edilebilir</p>
+	<p>•HTML sayfası yüklendiğinde yapılması istenilenler JavaScript ile yapılabilir.</p>
+	<p>•HTML sayfası kapatıldığında yapılması istenilenler JavaScript ile yapılabilir.</p>
+	<p>•Bir buton tıklandığında yapılması istenilenler JavaScript ile yapılabilir.</p>
+	<p>•Ve çok daha fazlası.</p>
+	<p>***JavaScript içindeki pek çok metod ile HTML elementleri üzerinde işlem yapabilirsiniz.</p>
+	<p>•HTML elemenlerinin öznitelikleri JavaScript ile dinamik olarak değiştirilebilir.</p>
+	<p>•HTML elementlerinin olayları JavaScript ile yönetilebilir.</p>
+	<p>•JavaScript ile yapamayacağınız şey yok gibidir.</p>
+<p>JavaScript çok güçlü bir dildir. Oyun da dahil olmak üzere pek çok uygulama yazılabilir.</p>
+
+
+
+
+
+
+
+</body>
+</html>
