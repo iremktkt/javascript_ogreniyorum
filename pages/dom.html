@@ -1,0 +1,446 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="UTF-8">
+<style>
+body{
+	background-color:	#F0E68C	; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+h1{
+	color:	#8B4513;
+	margin-top:30px;
+	
+	
+}
+
+
+h2{
+	color:#CD5C5C	;
+	margin-top:30px;
+	
+	
+}
+
+
+
+
+p{
+	color: black;             
+	font-size: 15px;
+	text-indent:30px;
+}
+.container{
+  width:200px;
+   margin: 20px 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li{
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left:10px;
+
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pasif {
+position relative;
+
+
+}
+
+header nav ul li:hover a,
+header nav ul li.aktif a{
+  background-color: #910a60;
+  color:white;
+}
+
+a.buton{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
+
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
+
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
+
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+ 
+
+
+    
+   
+    </header>
+ </div>
+
+	<h1>HTML DOM<h1>
+	
+	<p>HTML DOM ile JavaScript bir HTML belgesinin tüm öğelerine erişebilir ve bunları değiştirebilir.</p>
+	<h2>HTML DOM (Belge Nesnesi Modeli)<h2>
+	<p>Bir web sayfası yüklendiğinde, tarayıcı sayfanın bir Belge Nesne Modeli oluşturur.</p>
+	<img src="images/kod31.PNG">
+	
+	<p>Nesne modeliyle JavaScript, dinamik HTML oluşturmak için gereken tüm gücü alır:</p>
+	<p>•JavaScript sayfadaki tüm HTML öğelerini değiştirebilir</p>
+	<p>•JavaScript sayfadaki tüm HTML özelliklerini değiştirebilir</p>
+	<p>•JavaScript sayfadaki tüm CSS stillerini değiştirebilir</p>
+	<p>•JavaScript mevcut HTML öğelerini ve özelliklerini kaldırabilir</p>
+	<p>•JavaScript yeni HTML öğeleri ve özellikleri ekleyebilir</p>
+	<p>•JavaScript, sayfadaki mevcut tüm HTML etkinliklerine tepki verebilir</p>
+	<p>•JavaScript sayfada yeni HTML etkinlikleri oluşturabilir</p>
+	<h2>DOM nedir?<h2>
+	<p>•DOM, bir W3C (World Wide Web Consortium) standardıdır.</p>
+	<p>•DOM, belgelere erişmek için bir standart tanımlar:</p>
+    <p>"W3C Belge Nesne Modeli (DOM), programların ve komut dosyalarının bir belgenin içeriğine, yapısına ve stiline dinamik olarak erişmesine 
+	ve güncelleştirmesine izin veren bir platform ve dilden bağımsız arabirimdir."</p>
+	<br>
+	<p>W3C DOM standardı 3 farklı parçaya ayrılmıştır:</p>
+	
+	<p>•Core DOM - tüm belge türleri için standart model</p>
+    <p>•XML DOM - XML ​​belgeleri için standart model</p>
+    <p>•HTML DOM - HTML belgeleri için standart model</p>
+	
+	<h2>HTML DOM nedir?<h2>
+	<p>HTML DOM, HTML için standart bir nesne modeli ve programlama arabirimidir . Şunu tanımlar:</p>
+	<p>•Nesne olarak HTML öğeleri/p>
+    <p>•Özellikler tüm HTML elemanlarının</p>
+    <p>•Yöntemler tüm HTML öğelerine erişmek için</p>
+	<p>•Olaylar tüm HTML öğeleri için</p>
+	<p>Başka bir deyişle: HTML DOM, HTML öğelerini <b style="color: red"> alma </b> , <b style="color: red"> değiştirme </b>, <b style="color: red"> ekleme 
+	</b> veya <b style="color: red"> silme </b> standardıdır.</p>
+	<br>
+	<br>
+	<h1>DOM Yöntemleri<h1>
+	<p>HTML DOM yöntemleri, (HTML Elements'ta) gerçekleştirebileceğiniz eylemlerdir .</p>
+	<p>HTML DOM özellikleri, ayarlayabileceğiniz veya değiştirebileceğiniz değerlerdir.</p>
+	<br>
+	<h1>DOM Programlama Arayüzü<h1>
+	<p>HTML DOM'ye JavaScript (ve diğer programlama dilleri) ile erişilebilir.</p>
+
+<p>DOM'de, tüm HTML öğeleri nesne olarak tanımlanır.</p>
+<p>Programlama arayüzü, her nesnenin özellikleri ve yöntemleridir.</p>
+<p>Bir özellik (bir HTML öğesinin içeriğini değiştirmek gibi) almak veya set ki bir değerdir.</p>
+<p>Bir yöntem size (eklenti veya bir HTML elemanı silme gibi) yapabilirsiniz bir eylemdir.</p>
+<br>
+<p>**Aşağıdaki örnek <b style="color: red"> innerHTML </b> öğenin içeriğini ( ) ile şu şekilde değiştirir <b style="color: red">  id="demo" </b>:</p>
+<a class="buton" href="dom_ornek_1.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>Yukarıdaki örnekte getElementById, bir yöntem iken innerHTML, bir özelliktir .</p>
+<br>
+<h2>GetElementById Yöntemi<h2>
+<p>Bir HTML öğesine erişmenin en yaygın yolu <b style="color: red"> id </b>, öğenin.</p>
+<p>Yukarıdaki örnekte , elemanı bulmak için  <b style="color: red"> getElementById </b> kullanılan yöntem <b style="color: red">  id="demo" </b>.</p>
+<br>
+<h2>İnnerHTML Özelliği<h2>
+<p>Bir öğenin içeriğini almanın en kolay yolu <b style="color: red"> innerHTML </b>özelliği kullanmaktır.</p>
+<p><b style="color: red"> innerHTML </b> Mülkiyet alma veya HTML öğelerinin içeriği değiştirilmesi için yararlıdır.
+<br>
+<h2>DOM Belge Nesnesi<h2>
+<p>Belge nesnesi web sayfanızı temsil eder.</p>
+
+<p>Bir HTML sayfasındaki herhangi bir öğeye erişmek istiyorsanız, her zaman belge nesnesine erişmeye başlarsınız.</p>
+
+<p>Aşağıda, HTML'ye erişmek ve bunları değiştirmek için belge nesnesini nasıl kullanabileceğinize ilişkin bazı örnekler verilmiştir.</p>
+
+<h2>HTML Öğelerini Bulma<h2>
+<img src="images/kod32.PNG">
+<br>
+<h2>HTML Öğelerini Değiştirme<h2>
+<img src="images/kod33.PNG">
+<br>
+<h2>Eleman Ekleme ve Silme<h2>
+<img src="images/kod34.PNG">
+<br>
+<h2>Olay İşleyicileri Ekleme<h2>
+<img src="images/kod35.PNG">
+<br>
+<h2>HTML Nesneleri Bulma<h2>
+<p>İlk HTML DOM Düzey 1 (1998), 11 HTML nesnesi, nesne koleksiyonu ve özelliği tanımladı. Bunlar HTML5'te hala geçerlidir.
+
+Daha sonra, HTML DOM Seviye 3'e daha fazla nesne, koleksiyon ve özellik eklendi.</p>
+<img src="images/kod36.PNG">
+
+<br>
+<br>
+<h1>HTML DOM Öğeleri<h1>
+<h2>HTML Öğelerini Bulma<h2>
+<p>Genellikle JavaScript ile HTML öğelerini değiştirmek istersiniz.</p>
+<p>Bunu yapmak için önce elemanları bulmalısınız. Bunu yapmanın birkaç yolu vardır:</p>
+<p>•HTML öğelerini kimliğe göre bulma </p>
+<p>•Etiket adına göre HTML öğeleri bulma  </p>
+<p>•Sınıf adına göre HTML öğeleri bulma  </p>	
+<p>•CSS seçicileri ile HTML öğeleri bulma  </p>	
+<p>•HTML nesnesi koleksiyonlarına göre HTML öğelerini bulma </p>	
+<br>
+<h2>Kimliğe Göre HTML Öğesi Bulma<h2>
+<p>DOM'de bir HTML öğesi bulmanın en kolay yolu, öğe kimliğini kullanmaktır.</p>
+<p>Bu örnek şu öğeyi bulur <b style="color: red">  id="intro" </b>:
+<br>
+<br>
+<a class="buton" href="dom_ornek_2.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>Öğe bulunursa, yöntem öğeyi nesne olarak döndürür (myElement öğesinde).
+
+Öğe bulunamazsa, myElement içerecektir <b style="color: red"> null </b>.<p>
+<br>
+<h2>Etiket Adına Göre HTML Öğelerini Bulma<h2>
+<br>
+<a class="buton" href="dom_ornek_3.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<a class="buton" href="dom_ornek_4.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<h2>Sınıf Adına Göre HTML Öğelerini Bulma<h2>
+<p>
+Aynı sınıf adına sahip tüm HTML öğelerini bulmak istiyorsanız, kullanın <b style="color: red"> getElementsByClassName() </b> 
+Bu örnek, ile tüm öğelerin bir listesini döndürür <b style="color: red">  class="intro".</b> </p>
+<a class="buton" href="dom_ornek_5.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<p>!!!!Sınıf adına göre öğe bulma, Internet Explorer 8 ve önceki sürümlerinde çalışmaz.</p>
+<br>
+<h2>CSS Seçicileri ile HTML Öğeleri Bulma<h2>
+<p>Belirli bir CSS seçicisiyle eşleşen tüm HTML öğelerini (id, sınıf adları, türleri, öznitelikleri, öznitelik değerleri vb.) 
+Bulmak istiyorsanız, <b style="color: red"> querySelectorAll() </b>yöntemi kullanın .</p>
+<br>
+<a class="buton" href="dom_ornek_6.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>!!!!<b style="color: red"> querySelectorAll() </b> Yöntem Internet Explorer 8 ve önceki sürümlerinde çalışmaz.</p>
+<br>
+<h2>HTML Nesne Koleksiyonlarına Göre HTML Öğelerini Bulma<h2>
+<p>Bu örnek <b style="color: red"> id="frm1" </b> , form koleksiyonunu form koleksiyonunda bulur ve tüm öğe değerlerini görüntüler:</p>
+<a class="buton" href="dom_ornek_7.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h1>DOM - HTML'yi değiştirme<h1>
+<p>HTML DOM, JavaScript'in HTML öğelerinin içeriğini değiştirmesine izin verir.</p>
+<h2>HTML Çıktı Akışını Değiştirme<h2>
+<p>JavaScript dinamik HTML içeriği oluşturabilir:</p>
+<p>Tarih: Pzt Nis 06 2020 00:40:21 GMT + 0300 (GMT + 03: 00)</p>
+<p>JavaScript'te,<b style="color: red"> document.write() </b> doğrudan HTML çıktı akışına yazmak için kullanılabilir:</p>
+<a class="buton" href="dom_ornek_8.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>!!!!Asla <b style="color: red"> document.write() </b> belge yüklendikten sonra kullanmayın . Belgenin üzerine yazılır.</p>
+<br>
+<h2>HTML İçeriğini Değiştirme<h2>
+<p>Bir HTML öğesinin içeriğini değiştirmenin en kolay yolu <b style="color: red"> innerHTML </b> özelliği kullanmaktır .
+<br>
+Bir HTML öğesinin içeriğini değiştirmek için şu sözdizimini kullanın:</p>
+<p>document.getElementById(id).innerHTML = new HTML</p>
+<a class="buton" href="dom_ornek_9.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<img src="images/kod37.PNG">
+<br>
+<br>
+<a class="buton" href="dom_ornek_10.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<img src="images/kod38.PNG">
+<br>
+<h2>Bir Özelliğin Değerini Değiştirme<h2>
+<p>Bir HTML özelliğinin değerini değiştirmek için şu sözdizimini kullanın:
+
+document.getElementById(id).attribute = new value</p>
+<p>Bu örnek, bir <img> öğenin src özelliğinin değerini değiştirir :</p>
+<a class="buton" href="dom_ornek_11.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<img src="images/kod39.PNG">
+<br>
+<h1>HTML DOM - CSS'yi değiştirme<h1>
+<h2>HTML Stilini Değiştirme<h2>
+<p>Bir HTML öğesinin stilini değiştirmek için şu sözdizimini kullanın:</p>
+
+<p>document.getElementById(id).style.property = new style</p>
+<br>
+<a class="buton" href="dom_ornek_12.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h1>HTML DOM Animasyonu<h1>
+<p>Temel Bir Web Sayfası</p>
+<img src="images/kod40.PNG">
+<br>
+<h2>Animasyon Kabı Oluşturma<h2>
+<p>Tüm animasyonlar bir kapsayıcı öğeye göre olmalıdır.</p>
+<img src="images/kod41.PNG">
+<br>
+<h2>Öğelere Stil Verme<h2>
+<p>Kapsayıcı öğesi style = <b style="color: red"> "position: relative" </b> ile oluşturulmalıdır .</p>
+
+<p>Animasyon öğesi style = <b style="color: red"> "position: absolute" </b>"   ile oluşturulmalıdır .</p>
+<a class="buton" href="dom_ornek_13.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<h2>Animasyon Kodu<h2>
+<p>JavaScript animasyonları, bir öğenin stilindeki kademeli değişiklikleri programlayarak yapılır.
+
+Değişiklikler bir zamanlayıcı tarafından çağrılır. Zamanlayıcı aralığı küçük olduğunda, animasyon sürekli görünür.</p>
+<br>
+<p>Temel kod:</p>
+<img src="images/kod42.PNG">
+<br>
+<h2>JavaScript Kullanarak Animasyon Oluşturma<h2>
+
+<a class="buton" href="dom_ornek_14.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h1>DOM Koleksiyonları<h1>
+<h2>HTMLCollection Nesnesi<h2>
+<p> <b style="color: red"> getElementsByTagName() </b> Yöntem, bir döner <b style="color: red"> HTMLCollectionnesne </b></p>
+
+<p>Bir <b style="color: red"> HTMLCollectionnesne </b>. HTML öğelerinin bir dizi benzeri listesi (toplama) 'dir.</p>
+<img src="images/kod43.PNG">
+<br>
+<a class="buton" href="dom_ornek_14.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>Not: Dizin 0'dan başlar.</p>
+
+<h2>HTMLColeksiyon Uzunluğu<h2>
+<p>lengthÖzelliği, bir eleman sayısını tanımlar HTMLCollection:</p>
+<a class="buton" href="dom_ornek_15.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<a class="buton" href="dom_ornek_16.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>1.Tüm öğelerin bir koleksiyonunu oluşturun</p>
+<p>2.Koleksiyonun uzunluğunu görüntüleme</p>
+<p>Bu lengthözellik, bir koleksiyondaki öğeler arasında döngü yapmak istediğinizde yararlıdır:</p>
+<a class="buton" href="dom_ornek_17.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<p>HTMLCollection bir dizi DEĞİLDİR!</p>
+<p>Bir HTMLCollection bir dizi gibi görünebilir, ancak değildir.</p>
+
+<p>Listede dolaşabilir ve bir sayıya sahip öğelere başvurabilirsiniz (tıpkı bir dizi gibi).</p>
+
+<p>Ancak HTMLCollection öğesinde valueOf (), pop (), push () veya join () gibi dizi yöntemlerini kullanamazsınız.</p>
+<br>
+<h1> DOM Düğüm Listeleri<h1>
+<h2>HTML DOM Düğüm Listesi Nesnesi<h2>
+<p>Bir NodeListnesnenin bir belgeden ekstre düğümlerin bir listesi (toplama) 'dir.</p>
+<p>Bir NodeListnesne neredeyse bir HTMLCollectionnesne ile aynıdır.</p>
+<p>Bazı (eski) tarayıcılar gibi yöntemler için HTMLCollection yerine bir NodeList nesnesi döndürür getElementsByClassName().</p>
+<p>Tüm tarayıcılar özellik için bir NodeList nesnesi döndürür childNodes. </p>
+<p>Çoğu tarayıcı yöntem için bir NodeList nesnesi döndürür querySelectorAll().</p>
+<br>
+<img src="images/kod44.PNG">
+<br>
+<br>
+<a class="buton" href="dom_ornek_18.html">
+
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<h2>HTMLCollection ve NodeList Arasındaki Fark<h2>
+<p>Bir HTMLCollection(önceki bölüm) HTML öğelerinin topluluğudur.</p>
+
+<p>A NodeList, belge düğümlerinin bir koleksiyonudur.</p>
+
+<p>Bir NodeList ve bir HTML koleksiyonu aynı şeydir.</p>
+
+<p>Hem HTMLCollection nesnesi hem de NodeList nesnesi, nesnelerin dizi benzeri bir listesidir (koleksiyon).<p>
+
+<p>Her ikisinin de listedeki (koleksiyon) öğe sayısını tanımlayan bir length özelliği vardır.</p>
+
+<p>Her ikisi de bir dizi gibi her öğeye erişmek için bir dizin (0, 1, 2, 3, 4, ...) sağlar.</p>
+
+<p>HTMLColeksiyon öğelerine adlarına, kimliklerine veya dizin numaralarına erişilebilir.</p>
+
+<p>NodeList öğelerine yalnızca dizin numaralarıyla erişilebilir.</p>
+
+<p>Yalnızca NodeList nesnesi öznitelik düğümleri ve metin düğümleri içerebilir.<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+</body>
+</html>

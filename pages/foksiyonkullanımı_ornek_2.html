@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+ 
+<body>
+ 
+<h2>JavaScript Kombinasyon Hesaplama</h2>
+ 
+<p>Bu sayfa JavaScript ile fonksiyon kullanarak kombinasyon hesaplama örneğidir.</p>
+ 
+<form name="kombinasyon">
+    Eleman Sayısı (n) :<br>
+    <input type="text" id="elemanSayi"><br>
+    Seçim Sayısı (r) :<br>
+    <input type="text" id="secimSayi"><br>
+    <input type="button" id="Hesapla" value="HESAPLA">
+</form>
+<p id="kutu"></p>
+ 
+<script>
+ 
+ 
+ 
+    function faktor(sayi) {
+        
+        var sonuc=1;
+        for(var i=1;i<=sayi;i++)
+            {
+                sonuc*=i;
+            }
+            return sonuc;
+    }
+ 
+    var btn=document.getElementById("Hesapla");
+    btn.onclick=function(){
+        var n=Number(document.getElementById("elemanSayi").value);
+        var r=Number(document.getElementById("secimSayi").value);
+        var sonuc2=faktor(n)/(faktor(r)*faktor(n-r));
+        document.getElementById("kutu").innerHTML=sonuc2;
+    }
+ 
+</script>
+ 
+</body>
+</html>
+ 

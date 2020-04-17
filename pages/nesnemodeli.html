@@ -1,0 +1,353 @@
+<!Doctype>
+<html>
+<head>
+	<meta charset="UTF-8">
+</head>
+<head>
+<style>
+body{
+	background-color:#90EE90; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+h1{
+	color:#2F4F4F;
+	margin-top:30px;
+	
+	
+}
+
+
+h2{
+	color:	#F0FFF0	;
+	margin-top:30px;
+	
+	
+}
+
+
+
+
+p{
+	color: black;             
+	font-size: 15px;
+	text-indent:30px;
+}
+.container{
+  width:200px;
+   margin: 20px 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li{
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left:10px;
+
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pasif {
+position relative;
+
+
+}
+
+header nav ul li:hover a,
+header nav ul li.aktif a{
+  background-color: #910a60;
+  color:white;
+}
+
+a.buton{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
+
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
+
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
+
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+ 
+
+
+    
+   
+    </header>
+ </div>
+
+	<h1>Nesne Tanımları<h1>
+	
+	<p>JavaScript programlama dilinde  5 tane veri tipi ve 3 tane referansı ifade eden Object tipi vardır. 
+	Veri tipleri  Number, String, Boolean, Undefined, ve Null(bu da bir obje)dir. 
+	Fonksiyon, dizi, nesne (object)  gibi refrensları ifade eden Object tipler bulunmaktadır.</p>
+
+ 
+	<p>JavaScript'te neredeyse "her şey" bir nesnedir.</p>
+	<p>•Booleans nesne olabilir (  <b style="color: red"> new </b> anahtar kelime ile tanımlanmışsa )</p>
+	<p>•Sayılar nesne olabilir ( <b style="color: red"> new </b> anahtar kelime ile tanımlanmışsa )</p>
+	<p>•Dizeler nesne olabilir ( <b style="color: red"> new </b> anahtar kelime ile tanımlanmışsa )</p>
+	<p>•Tarihler her zaman nesnedir</p>
+	<p>•Matematik her zaman nesnedir</p>
+	<p>•Normal ifadeler her zaman nesnedir</p>
+	<p>•Diziler her zaman nesnedir</p>
+	<p>•Fonksiyonlar her zaman nesnedir</p>
+	<br>
+	<p>•Aşağıdaki basit kod bir değişkene tek bir değer atamaktadır:</p>
+	
+	<img src="images/kod27.PNG">
+	<br>
+<p>•Nesneler birden fazla değeri saklayabilirler. Örneğin Marka, Model, Renk gibi değerleri bellekte saklamak isteseydik şu konu yazabilirdik:</p> 
+<a class="buton" href="nesnemodeli_ornek_1.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>•Bu şekilde pek çok değeri saklayabiliriz.
+
+JavaScript nesne için özellikler, ad:değer çifti şeklinde yazılır ve virgün ile birbirinden ayrılır.</p>
+<h2>Nesne Özellikleri<h2>
+<p>JavaScript içindeki ad:değer çiftleri özellik (property) olarak adlandırılır.</p>   
+<img src="images/kod28.PNG">
+<br>
+<br>
+<img src="images/kod29.PNG">
+<p>•Özellik, nesne içinde veri sakladığımız alanlardır.</p>
+
+<h2>Nesne Tanımlama<h2>
+<p>JavaScript ile nesne tanımlarken (yaratırken) öncelikle nesnemize bir ad veririz.
+
+Daha sonra = simgesi ile <b style="color: red"> {} </b>  simgeleri arasına özellikleri listeleriz.</p>
+
+<a class="buton" href="nesnemodeli_ornek_2.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>•Tanımlama yaparken boşluklar ve satır başları önemsizdir. Nesneyi yukarıdaki gibi de tanımlayabiliriz.</p>
+<br>
+ <h2>JavaScript Nesnesinin Özelliklerine Erişmek<h2>
+
+<p>Bir JavaScript nesnesinin özelliklerine iki farklı şekilde erişebilirsiniz: 
+<b style="color: red"> nesne.ozellikAdi </b> veya <b style="color: red"> nesne["ozellikAdi"] </b </p>
+<p>Yani dilerseniz nesnenin adını yazıp, sonuna nokta ekleyip özelliğin adını yazabilirsiniz veya ikinci yöntem olarak köşeli parantez içinde
+
+nesne adını tırnak içine alarak nesne özelliğine erişebilirsiniz.</p>
+<a class="buton" href="nesnemodeli_ornek_3.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<br>
+<h2>JavaScript Nesnenin Metodlarına Erişmek<h2>
+<p>JavaScript nesne içinde özellik saklayabildiğiniz gibi, metod de saklayabilirsiniz.</p>
+<p>JavaScript nesnesi içinde metod saklamak istersek şu söz dizimini kullanırız:  <b style="color: red"> metodAdi:function(){} </b </p>
+<p>JavaScript nesnesi içindeki metodu şu şekilde çağırırız: <b style="color: red"> nesneAdi.metodAdi(); </b </p>
+<br>
+<br>
+
+<a class="buton" href="nesnemodeli_ornek_4.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h1>Nesne Oluşturucuları<h1>
+<a class="buton" href="nesnemodeli_ornek_5.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<br>
+<p>•Yapıcı işlevlerini büyük harfli ilk harfle adlandırmak iyi bir uygulama olarak kabul edilir.</p>
+
+<h2>Nesne Türleri (Planlar) (Sınıflar)<h2>
+<p>Bazen aynı "tipte" birçok nesne oluşturmak için bir " taslak " lazım .</p>
+<p>Bir "nesne türü" yaratmanın yolu, bir nesne yapıcı işlevi kullanmaktır.</p>
+<p>Yukarıdaki örnekte <b style="color: red"> function Person()</b> , bir nesne yapıcı işlevidir.</p>
+<p>Aynı türden nesneler, yapıcı işlevini şu  <b style="color: red"> new </b> anahtar sözcükle çağırarak oluşturulur : </p>
+<br>
+
+<a class="buton" href="nesnemodeli_ornek_6.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<h2>"Bu" Kelime<h2>
+<P>JavaScript'te, çağrılan şey <b style="color: red"> this </b>, koda "sahip" olan nesnedir.</p>
+<p><b style="color: red"> this </b> Bir nesnede kullanıldığında değeri nesnenin kendisidir.</p>
+<p>Bir yapıcı işlevinde <b style="color: red"> this </b> bir değer yoktur. Yeni nesnenin yerine geçer.<b style="color: red"> this </b> Yeni bir nesne oluşturulduğunda değeri yeni nesne olur.</p>
+ <h2>Bir Nesneye Özellik Ekleme<h2>
+ <p>Mevcut bir nesneye yeni bir özellik eklemek kolaydır:</p>
+ 
+<a class="buton" href="nesnemodeli_ornek_7.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>•Özellik myFather'a eklenecek. Anneme değil. (Başka hiçbir nesneye değil).</p>
+<h2>Bir Nesneye Yöntem Ekleme<h2>
+<p>Mevcut bir nesneye yeni bir yöntem eklemek kolaydır:</p>
+<a class="buton" href="nesnemodeli_ornek_8.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>•Yöntem myFather'a eklenecektir. Anneme değil. (Başka hiçbir nesneye değil).</p>
+<h2>Yapıcıya Özellik Ekleme<h2>
+<p>Varolan bir nesneye yeni bir özellik eklediğiniz gibi, nesne oluşturucuya yeni bir özellik ekleyemezsiniz:</p>
+<a class="buton" href="nesnemodeli_ornek_9.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<p>Bir kurucuya yeni bir özellik eklemek için, kurucuyu yapıcı işlevine eklemeniz gerekir:</p>
+<br>
+<br>
+<a class="buton" href="nesnemodeli_ornek_10.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>Bu şekilde nesne özellikleri varsayılan değerlere sahip olabilir.</p>
+<h2>Bir Yapıcıya Yöntem Ekleme<h2>
+<p>Yapıcı işleviniz ayrıca yöntemleri de tanımlayabilir:</p>
+<a class="buton" href="nesnemodeli_ornek_11.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<p>Varolan bir nesneye yeni bir yöntem eklediğiniz gibi, nesne oluşturucuya yeni bir yöntem ekleyemezsiniz.
+
+Nesne yapıcısına yöntem ekleme, yapıcı işlevi içinde yapılmalıdır:</p>
+<img src="images/kod30.PNG">
+<p>ChangeName () işlevi, adın değerini kişinin lastName özelliğine atar.</p>
+<br>
+<br>
+<br>
+<a class="buton" href="nesnemodeli_ornek_12.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>JavaScript "yerine" tarafından bahsetme şeklini kişi bilir bu ile myMother .</p>
+<br>
+<h2>Yerleşik JavaScript Oluşturucuları<h2>
+<p>JavaScript yerel nesneler için yerleşik yapıcılara sahiptir:</p>
+<a class="buton" href="nesnemodeli_ornek_13.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<h2>Dize Nesneleri<h2>
+<p>Normalde, dizeler ilkel olarak oluşturulur: <b style="color: red"> var firstName = "John" </b> </p>
+<p>Ancak dizeler, <b style="color: red"> new </b> anahtar kelime kullanılarak nesne olarak da oluşturulabilir : <b style="color: red"> var firstName = new String("John" </b>)</p>
+<h2>Nesne Sayısı<h2>
+<p>Normalde sayılar ilkel olarak oluşturulur: <b style="color: red"> var x = 123 </b></p>
+<p>Ancak sayılar, <b style="color: red"> new </b> anahtar kelime kullanılarak nesne olarak da oluşturulabilir : <b style="color: red"> var x = new Number(123) </b></p>
+<h2>Boole Nesneleri<h2>
+<p>Normalde, booleans ilkel olarak oluşturulur: <b style="color: red"> var x = false </b></p>
+<p>Ancak booleans <b style="color: red"> new </b> anahtar kelimesini kullanarak nesne olarak da oluşturulabilir : <b style="color: red"> var x = new Boolean(false) </b></p>
+<h1>Nesne Prototipleri<h1>
+<p>Tüm JavaScript nesneleri, özellikleri ve yöntemleri bir prototipten devralır.</p>
+<a class="buton" href="nesnemodeli_ornek_14.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<br>
+
+<p>Ayrıca öğrendim değil varolan nesne yapıcı yeni bir özellik ekleyin:</p>
+<a class="buton" href="nesnemodeli_ornek_15.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<p>Bir kurucuya yeni bir özellik eklemek için, kurucuyu yapıcı işlevine eklemeniz gerekir:</p>
+<a class="buton" href="nesnemodeli_ornek_16.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<h2>Prototip Kalıtım<h2>
+<p>Tüm JavaScript nesneleri bir prototipin özelliklerini ve yöntemlerini devralır:</p>
+<p>•<b style="color: red"> Date </b> nesneler miras alır  <b style="color: red"> Date.prototype </b></p>
+ <p>• <b style="color: red"> Array </b> nesneler miras alır <b style="color: red"> Array.prototype </b> </p>  
+ <p>• <b style="color: red"> Person </b> nesneler miras alır <b style="color: red"> Person.prototype </b></p> 
+    
+<p><b style="color: red"> Date </b> nesneler, <b style="color: red"> Array </b> nesneler ve <b style="color: red"> Person </b> nesneler miras alır <b style="color: red"> Object.prototype </b></p>
+<h2>Nesnelere Özellik ve Yöntem Ekleme<h2>
+<p>Bazen belirli bir türdeki mevcut tüm nesnelere yeni özellikler (veya yöntemler) eklemek istersiniz.</p>
+<p>Bazen bir nesne yapıcısına yeni özellikler (veya yöntemler) eklemek istersiniz.</p>
+
+<h2>Prototip Özelliğini Kullanma<h2>
+<p>JavaScript <b style="color: red"> prototype </b> özelliği, nesne yapıcılarına yeni özellikler eklemenize olanak tanır:</p>
+
+<a class="buton" href="nesnemodeli_ornek_17.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>JavaScript <b style="color: red"> prototype </b> özelliği ayrıca nesne oluşturucularına yeni yöntemler eklemenize izin verir:</p>
+<a class="buton" href="nesnemodeli_ornek_18.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>!!!Yalnızca kendi prototiplerinizi değiştirin . Standart JavaScript nesnelerinin prototiplerini asla değiştirmeyin.</p>
+
+
+    
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</body>
+</html>

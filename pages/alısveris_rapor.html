@@ -1,0 +1,134 @@
+<!Doctype>
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+body{
+	background-color:	#F1F8E9; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+
+
+
+
+h2{
+	color:#FF4500;
+	margin-top:30px;
+    
+	
+	
+}
+
+p{
+	color:	#48D1CC;             
+	font-size: 20px;
+	text-indent:30px;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+
+    
+   
+    
+  </header>
+ </div>
+
+	<h2>Alışveriş Listesi Rapor<h2>
+	<p> <font color="black"> Alışveriş Listesi javascript kodları şu şekilde açıklanır:</font> </p>
+	<br>
+	<p>•Aldığımız ürünleri listeden çıkarmak için temizle butonunun çalışması gerekir. Bu yüzden remove fonksiyonu kullanılır. </p>
+	
+
+	
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> function</b> <b> temizle (el) {
+       el.remove();
+       }  </b></font></p>
+       </pre>
+	
+
+	   <p>•Bütün ürünleri aynı anda silmek için hepsini sil butonu çalıştırılmalı.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> function</b> <b>  silme(){
+       document.getElementById("ürünler").innerHTML="";
+       }  </b></font></p>
+       </pre>
+	   
+	   <p>•Ürünlerin eklenmesi için "ekle" fonksiyonu kullandık.</p>
+	   
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> function</b> <b> ekle(urun) {
+       </b></font></p>
+       </pre>
+	   
+	   <p>•Ürünlere değer ataması yapıldı.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> var</b> <b> urun = document.getElementById("urun").value;
+       </b></font></p>
+       </pre>
+	   
+	   <p>•Eklenen ürünlere liste ögesi tanımlamak için maddelendirdik.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> var</b> <b> node = document.createElement("li");
+       </b></font></p>
+       </pre>
+	   
+	   <p>•Ürünün içindeki textleri düğümünü textnode düğümüne alıyor.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> var</b> <b> textnode = document.createTextNode(urun);
+       </b></font></p>
+       </pre>
+	   
+	   <p>•Ekle butonuna tıkladıkça ürünleri kuyruğu alıyor.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> var</b> <b> node2 = document.createElement("button");
+       </b></font></p>
+       </pre>
+	   
+	    <p>•Üst kısımdaki remove fonksiyonu çağırılır ürünlerin tek satır halinde silinmesini sağlar.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+       <b style= "color:red "> var</b> <b> textnode2 = document.createTextNode("temizle");
+	 node2. <b style= "color:red ">onclick </b> <b> = (e) => {
+          temizle(e.path[<b style= "color:red "> 1</b> <b>]);
+        };
+       </b></font></p>
+       </pre>
+	   
+	   <p>•Ürünler düğüme alınır ve butona tıklayınca, burada alınan düğümü ana düğüm ile birleştirir.</p>
+	   <p><font face="tahoma" size="3" color="black">
+       <pre>
+      node2.appendChild(textnode2);
+       node.appendChild(textnode);
+       node.appendChild(node2);
+       document.getElementById("ürünler").appendChild(node);
+       }</font></p>
+       </pre>
+	 
+	<img src="images/alısveris.PNG">	
+
+
+
+
+
+
+
+</body>
+</html>

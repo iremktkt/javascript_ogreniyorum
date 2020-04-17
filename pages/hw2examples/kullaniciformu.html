@@ -1,0 +1,96 @@
+<!Doctype>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Kullanıcı Formu</title>
+    <link rel="stylesheet" href="../../css/kullaniciformu.css">
+    <script src="../../js/kullaniciformu.js"></script>
+</head>
+<body>
+<div>
+    <h1>Kullanıcı Formu<h1>
+</div>
+<form id="kayitForm">
+    <table border="10" cellpadding="10">
+        <tr>
+            <td><label>Ad  :</label></td>
+            <td><input type="text" name="ad" id="ad"></td>
+        </tr>
+        <tr>
+            <td><label>Soyad  :</label></td>
+            <td><input type="text" name="soyad" id="soyad"></td>
+        </tr>
+        <tr>
+            <td>Doğum Yılı</td>
+            <td><select name="yıl">
+                <option value="1995">1995</option>
+                <option value="1994">1994</option>
+                <option value="1993">1993</option>
+                <option value="1992">1992</option>
+                <option value="1991">1991</option>
+                <option value="1990">1990</option>
+                <option value="1989">1989</option>
+                <option value="1988">1988</option>
+                <option value="1987">1987</option>
+                <option value="1986">1986</option>
+                <option value="1985">1985</option>
+                <option value="1984">1984</option>
+                <option value="1983">1983</option>
+                <option value="1982">1982</option>
+                <option value="1981">1981</option>
+                <option value="1980">1980</option>
+
+            </select></td>
+        </tr>
+        <tr>
+            <td>Cinsiyet</td>
+            <td><input type="radio" name="cinsiyet" value="Kız" />Kız <input  name="cinsiyet" type="radio" value="Erkek" />Erkek</td>
+        </tr>
+
+
+        <tr>
+            <td><label>TC Kimlik:</label></td>
+            <td><input type="tc" id="tc" name="tc"> </td>
+        </tr>
+        <tr>
+            <td><label>Telefon:</label></td>
+            <td><input type="tel" id="tel" name="tel"> </td>
+        </tr>
+        <tr>
+            <td><label>E-posta:</label></td>
+            <td><input type="eposta" id="eposta" name="eposta"> </td>
+        </tr>
+        <td><label>Adres :</label></td>
+        <td><input type="adres" id="adres" name="adres"> </td>
+        </tr>
+        <tr>
+            <td><label>Şehir:</label></td>
+            <td><input type="sehir" id="sehir" name="sehir"> </td>
+        </tr>
+        <tr>
+            <td><label>Meslek :</label></td>
+            <td><input type="meslek" id="meslek" name="meslek"> </td>
+        </tr>
+        <tr>
+            <td><label>Şifre:</label></td>
+            <td><input type="password" id="sifre" name="sifre"></td>
+
+        </tr>
+        <tr>
+            <td><label>Tekrar Şifre:</label></td>
+            <td><input type="password" id="tsifre" name="tsifre"></td>
+
+        </tr>
+
+        <tr>
+            <td colspan="100">
+                <input type="button"  onclick="formkontrol();" value="Kaydet">
+            </td>
+
+        </tr>
+
+
+    </table>
+</form>
+<body>
+</html>

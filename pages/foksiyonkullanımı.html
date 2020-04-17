@@ -1,0 +1,298 @@
+<!Doctype>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<head>
+<style>
+body{
+	background-color:#F0FFFF		; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+h1{
+	color:#B22222;
+	margin-top:30px;
+	
+	
+}
+
+
+h2{
+	color:	#CD853F	;
+	margin-top:30px;
+	
+	
+}
+
+h3{
+	color:	#CD5C5C		;
+	margin-top:30px;
+	
+	
+}
+
+
+p{
+	color: black;             
+	font-size: 15px;
+	text-indent:30px;
+}
+.container{
+  width:200px;
+   margin: 20px 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li{
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left:10px;
+
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pasif {
+position relative;
+
+
+}
+
+header nav ul li:hover a,
+header nav ul li.aktif a{
+  background-color: #910a60;
+  color:white;
+}
+
+a.buton{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
+
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
+
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
+
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+    
+   
+    
+  </header>
+ </div>
+
+	<h1>JavaScript Fonksiyon Kullanımı<h1>
+	<p>Fonksiyonlar belirli bir görevi yerine getirmek için tasarlanmış kod bloklarıdır. 
+	Hazırlanan fonksiyonlar çağrıldığında yürütülerek istenen görev gerçekleştirilir.</p>
+	<br>&nbsp;
+	
+	<img src="images/kod24.PNG">
+	
+	<p>Fonksiyoların temel yapısı yukarıdaki gibidir. “function” anahtar kelimesi ile başlar. 
+Daha sonra fonksiyona bir isim verilir. Yukarıdaki fonksiyonda fonk1 ismi verilmiştir.</p> 
+<p>Fonksiyonları yapacağı işe göre isimlendirmek kolaylık sağlayacaktır. Fonksiyon ismi verildikten sonra “( )” parantez açılır.</p>
+<p>Parantezler virgüllerle ayrılmış parametre adlarını içerebilir:
+(parametre1, parametre2, …)</p>   
+<p>Parametreler fonksiyon çağrıldığında fonksiyon tarafından alınan değerlerdir. Alınan bu değerler değişkenler gibi davranır ve fonksiyon içerisinde bu şekilde davranır.</p>
+<p>{ } süslü parantezler içindeki kısım fonksiyonun çalıştıracağı kodlardır. Bu kodlar fonksiyon çağrıldığında çalışacaktır. Fonksiyonun çağrılması;</p>
+<p>Bir olay meydana geldiğinde (kullanıcı bir düğmeyi tıklattığında),
+JavaScript kodundan çağrıldığında,
+Otomatik olarak (kendiliğinden) olabilmektedir.</p>
+<p>Fonksiyonda kullanılan return ifadesi fonksiyonun geri döndüreceği değer için kullanılır. return ifadesine ulaşıldığında fonksiyon duracaktır.</p>
+<p>Yukarıda fonk1 ismiyle oluşturduğumuz fonksiyonu incelediğimizde dışarıdan 2 adet parametre aldığını görmekteyiz (s1,s2).</p>
+<p>ve alınan bu iki değerinin çarpımının geriye döndürüldüğünü görüyoruz.</p>
+	<br>
+	
+	
+
+<p>Şimdide oluşturduğumuz bu fonksiyonu nasıl çağırabileceğimize bakalım.</p>
+
+<a class="buton" href="foksiyonkullanımı_ornek_1.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h2>Niçin Fonksiyon Kullanılır?<h2>
+
+<p>Yukarıda fonksiyon kullanımını en basit haliyle gördük. 
+Fonksiyon kullanmaktaki amaç fonksiyon içerisine yazdığımız kodları defalarca kullanabilecek olmamızdır. Biraz daha açalım.</p>
+<img src="images/kod25.PNG">
+
+
+<p>Yukarıda kombinasyon hesaplamak için gerekli formülü görmekteyiz. Biz bu işlemi fonksiyon kullanmadan yapan bir sayfa oluşturacaksak yani kullanıcıdan “n” ve “r” değerini alıp sonucu hesaplayacaksak 3 defa faktoriyel hesabı yapmamız gerekecektir.
+</p>
+<p>(n!, r! ve (n-r)! )</p>
+<p>Fakat biz faktoriyel alma işini bir fonksiyona yaptırırsak sadece kullanıcıdan aldığımız bu değerleri fonksiyona yollamamız yeterli olacaktır.</p>
+
+<h2>Kombinasyon Örneği:<h2>
+<a class="buton" href="foksiyonkullanımı_ornek_2.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h1>Fonksiyon Parametreleri ve Bağımsız Değişkenler<h1>
+<img src="images/kod26.PNG">
+<p>Fonksiyon parametreleri olan isimler fonksiyon tanımında listelenmiş.</p>
+<p>İşlev bağımsız değişkenleri , fonksiyona iletilen (ve bu fonksiyon tarafından alınan) gerçek değerlerdir .</p>
+<br>
+<h2>Parametre Kuralları<h2>
+<p>JavaScript fonksiyon tanımları, parametreler için veri türlerini belirtmez.</p>
+<p>JavaScript fonksiyonları, iletilen bağımsız değişkenlerde tür denetimi gerçekleştirmez.</p>
+<p>JavaScript fonksiyonları, alınan bağımsız değişkenlerin sayısını kontrol etmez.</p>
+<br>
+<h2>Parametre Varsayılanları<h2>
+<p>Bir işlev eksik argümanlarla (bildirilenden daha az) çağrılırsa , eksik değerler şu şekilde ayarlanır: tanımsız</p>
+<p>Bazen bu kabul edilebilir, ancak bazen parametreye varsayılan bir değer atamak daha iyidir:</p>
+<a class="buton" href="foksiyonkullanımı_ornek_3.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h2>Bağımsız Değişkenler Nesnesi<h2>
+<p>JavaScript işlevlerinde arguments nesnesi adı verilen yerleşik bir nesne vardır.
+
+Bağımsız değişken nesnesi, işlev çağrıldığında (çağrıldığında) kullanılan bir dizi bağımsız değişken içerir. </p>
+<p>**Bu şekilde, bir sayı listesindeki en yüksek değeri bulmak (örneğin) için bir fonkiyonu kullanabilirsiniz:</p>
+
+<a class="buton" href="foksiyonkullanımı_ornek_4.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>**Veya tüm giriş değerlerini toplamak için bir işlev oluşturun:</p>
+<a class="buton" href="foksiyonkullanımı_ornek_5.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h1>Fonksiyon Çağırma<h1>
+
+<p>•Bir JavaScript'in içindeki kod <b style="color: red"> function </b>, "bir şey" çağırdığında çalıştırılır.</p>
+ <p>•Bir işlevin içindeki kod, işlev çağrıldığında yürütülür </p>
+ <p>•" Bir fonkiyonu çağırmak " yerine " bir fonkiyonu çağır " terimini kullanmak yaygındır .</p>
+ <p>•"Bir fonkiyonu çağırmak", "bir fonkiyonu başlatmak" veya "bir fonkiyonu yürütmek" demek yaygındır.</p>
+ <p>•Bu öğreticide, invoke kullanacağız , çünkü bir JavaScript işlevi çağrılmadan çağrılabilir.</p>
+ <br>
+ <h1>Bir Fonksiyonu Fonksiyon Olarak Çağırma<h1>
+ <a class="buton" href="foksiyonkullanımı_ornek_6.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>myFunction () ve window.myFunction () aynı işlevdir:</p>
+ <a class="buton" href="foksiyonkullanımı_ornek_7.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+ 
+ <h1>Bir Fonksiyonu Yöntem Olarak Çağırma<h2>
+ <p>JavaScript'te işlevleri nesne yöntemleri olarak tanımlayabilirsiniz.</p>
+<p>Aşağıdaki örnek , iki özellik ( firstName ve lastName ) ve bir yöntem ( fullName ) içeren bir nesne ( myObject ) oluşturur :</p>
+ <a class="buton" href="foksiyonkullanımı_ornek_8.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+
+
+<p>FullName yöntemi, bir fonksiyonudur. İşlev nesneye aittir. myObject , işlevin sahibidir.</p>
+<p>Denilen şey this, JavaScript koduna "sahip" olan nesnedir. Bu durumda değeri this olan myObject .</p>
+<p>Dene! Değerini döndürmek için fullName yöntemini değiştirin this:</p>
+<a class="buton" href="foksiyonkullanımı_ornek_9.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>***Bir işlevi nesne yöntemi olarak çağırmak, değerinin this nesnenin kendisi olmasına neden olur .</p>
+<br>
+
+<h1>Fonksiyonu Uygula<h1>
+<h2>Yöntem Yeniden<h2>
+
+<p>İle <b style="color: red"> apply() </b>yöntemle, farklı nesneler üzerinde kullanılabilecek bir yöntem yazabilirsiniz. </p>
+<h3>JavaScript Apply () Yöntemi<h3>
+
+<p> <b style="color: red"> apply() </b>)Yöntemine benzer  <b style="color: red"> call() </b>bir yöntem (bir önceki bölüm).</p>
+<a class="buton" href="foksiyonkullanımı_ornek_10.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<h2>Call () ve Apply () Arasındaki Fark<h2>
+<p>Fark şu:</p>
+
+<p><b style="color: red"> call() </b>Yöntem argüman alır ayrı ayrı .</p>
+<p><b style="color: red"> apply() </b>Yöntem, olarak argüman alır dizisi .</p>
+<br>
+ <h1>Dizilerde Maks. Yöntemi Benzetme<h2>
+<p>•En büyük sayıyı (sayı listesinde)<b style="color: red"> Math.max() </b>  yöntemi kullanarak bulabilirsiniz :</p>
+<a class="buton" href="foksiyonkullanımı_ornek_11.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+
+<p>•JavaScript dizilerinin bir max () yöntemi olmadığından, yöntemi uygulayabilirsiniz Math.max().</p>
+<a class="buton" href="foksiyonkullanımı_ornek_12.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<p>•İlk argüman (null) önemli değil. Bu örnekte kullanılmamaktadır.
+
+Bu örnekler aynı sonucu verecektir:</p> 
+<a class="buton" href="foksiyonkullanımı_ornek_13.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<a class="buton" href="foksiyonkullanımı_ornek_14.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+<a class="buton" href="foksiyonkullanımı_ornek_15.html">
+<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>
+</body>
+</html>

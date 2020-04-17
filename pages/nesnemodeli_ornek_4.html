@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<head>
+<title>Sayfa başlığı</title>
+</head>
+<body>
+<h1>JavaScript Nesne Özelliklerine Erişmek</h1>
+
+Öğrenci Adı :<p id="demo"></p>
+
+
+<script>
+var ogrenci = {
+ad:"Ali", 
+soyad:"Veli", 
+numara:110, 
+sinif:"1A",
+tamAd: function(){
+   return this.ad + " " + this.soyad;
+}
+};
+document.getElementById("demo").innerHTML = ogrenci.tamAd();
+  
+</script>
+</body>
+</html>

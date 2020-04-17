@@ -1,0 +1,342 @@
+<!Doctype>
+<html>
+<head>
+    <meta charset="UTF-8">
+<style>
+body{
+	background-color:#C0C0C0; 
+ width: 1100px;
+    margin:80px auto;
+	
+}
+h1{
+	color: 	#FF6347;
+	margin-top:30px;
+	
+	
+}
+
+h2{
+	color: #F4A460	;
+	margin-top:30px;
+	
+	
+}
+
+
+h3{
+	color:	#A0522D	;
+	margin-top:30px;
+	
+	
+}
+
+p{
+	color: black;             
+	font-size: 15px;
+	text-indent:30px;
+}
+
+
+.container{
+  width:200px;
+   margin: 20px 40px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li{
+  padding-left: 20px;
+}
+
+header nav ul li a{
+  display: inline-block;
+  padding-top: 10px;
+  padding-left:10px;
+
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.pasif {
+position relative;
+
+
+}
+
+header nav ul li:hover a,
+header nav ul li.aktif a{
+  background-color: #910a60;
+  color:white;
+}
+
+a.buton{
+    float:left;
+    font-size:30px;
+    font-weight:bold;
+    border-top:1px solid #999;
+    border-left:1px solid #999;
+    border-right:1px solid #333;
+    border-bottom:1px solid #333;
+    color:#333;
+    width:auto;
+    text-decoration:none
+}
+
+a.buton:hover{
+    border-top:1px solid #333;
+    border-left:1px solid #333;
+    border-right:1px solid #999;
+    border-bottom:1px solid #999;
+    color:#333;
+}
+
+a.buton span{
+    background:#d4d0c8 url(buton_ard.gif) repeat-x;
+    float:left;
+    line-height:24px;
+    height:24px;
+    padding:0 10px;
+    border-right:1px solid #777;
+    border-bottom:1px solid #777;
+}
+
+a.buton:hover span{
+    border:none;
+    border-top:1px solid #777;
+    border-left:1px solid #777;
+    background:#d4d0c8 url(buton_fare_ard.gif) repeat-x;
+    cursor:pointer;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+
+    
+   
+    
+  </header>
+ </div>
+
+	<h1>JavaScript String<h1>
+	<p>
+		Bir JavaScript string, basitçe bir grup karakteri saklamaya yarar. "Ali", "Ali Veli", "Bu bir web sitesidir", "sezon11" birer string örnekleridir.</p>
+	
+	<p>
+Bu tırnak işareti tek veya çift olabilir. </p>
+	
+	<img src="images/kod18.PNG">	
+<br>&nbsp;
+
+	<p>Bir string değişkene değer atarken, metnin içinde tek tırnak veya çift tırnak olmadığı müddetçe istediğiniz uzunlukta veri girebilirsiniz. </p>
+	<p>Eğer metin içinde  string yapısını bozacak tek tırnak veya çift tırnak varsa buna özel önlem almanız gerekir.</p>
+	<p>Bir metinde string yapısını bozacak tek tırnak veya çift tırnak varsa o zaman JavaScript kaçış işaretini kullanmalısınız.</p>
+	
+	<p> Kaçış işareti \ işaretidir.</p>
+
+ <a class="buton" href="dizi_ornek_1.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h1>String Length (Stringin uzunluğu)<h1>
+<p>String yerleşik olarak bazı özelliklere sahiptir. length bunlardan biridir ve stringin uzunluğunu verir.</p>
+<a class="buton" href="dizi_ornek_2.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+
+<h3>Özel Karakterler<h3>
+
+<p>Yukarıda bahsedildiği gibi bir stringe atadığınız değer içinde " veya ' gibi özel karakterler varsa bu JavaScript tarafından yanlış anlaşılabilir.</p>
+<p>Bildiğiniz gibi JavaScript'de  " ve '  karakterleri string değişkene veri atarken kullanılan karakterlerdir.</p>
+<p>Bu tür bir sorun ile karşılaşmamak için eğer metnin içinde " veya ' karakterleri varsa başına \ karakteri koyarak bunun metnin bir parçası olduğunu JavaScript'e bildiririz.</p>
+<p>\ karakteri JavaScript'te Kaçış Karakteri olarak adlandırılır.</p>
+<a class="buton" href="dizi_ornek_3.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<p>*** \ kaçış karakteri</p>
+<p>•Metinde tek tırnak varsa: \'</p>
+<p>•Metinde çift tırnak varsa \"</p>
+<p>•Metinde ters eğik çizgi varsa \\</p>
+<p>şeklinde kullanılabilir.</p>
+
+<h1>String Metodları<h1>
+<p>String metodları, string türü veriler üzerinde işlem yaparken faydalandığımız metodlardır.</p>
+<p>Normalde String ilkel bir türdür ve ilke türlerde özellik ve metodlar olmaz. Nesnelerin özellikleri ve metodları olur.</p>
+<p>Fakat JavaScript ilkel değerler için de metod ve özelliklere sahiptir. Çünkü JavaScript ilkel değerleri işlerken bunlara nesne gibi davranır.</p>
+
+<h2>String Length (string uzunluğu)<h2>
+<p>length özelliği stringin uzunluğunu verir (karakter sayısını, boşluklarda dahil olmak üzere).</p>
+<a class="buton" href="dizi_ornek_4.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h2>JavaScript String indexOf() ve lastIndexOf() Metodu<h2>
+
+<p>Bir string içindeki bir karakterin ya da metnin bir parçasının sıra numarasını (index) bulmak için indexOf metodu kullanılır.</p>
+<p>indexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu ilk değerin sıra numarasını verir. </p>
+<p> Sıra numarası yani index string işlemlerinde çokca kullanılan bir özelliktir.</p>
+
+
+<a class="buton" href="dizi_ornek_5.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p> lastIndexOf metodu kendine verilen karakteri ya da kelimeyi metnin içinde arar ve bulduğu son değerin sıra numarasını verir.</p>
+<br>&nbsp;
+<a class="buton" href="dizi_ornek_6.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<p>indexOf ve  lastIndexOf metodu, kendine verilen değeri metin içinde bulamazsa geriye -1  döndürür. </p>
+<p> Bunun anlamı değer bulunamadı demektir.</p>
+
+<br>&nbsp;
+
+<h3>Bunu unutmayın!<h3>
+<p>*JavaScript saymaya 0'dan başlar. </p>
+<p>*Indeks numarasıda verilirken hesaplamaya sıfırdan başlanır. Yani birinci sıradaki karakterin index numarası 0'dır.</p>
+<br>&nbsp;
+
+<p> Her iki metod içinde aramamaya başlanılacak başlangıç numarası verilebilir.</p>
+<p> Yani diyebilirsinizki "aramaya 10. karakterden sonra başla".</p>
+<p>Bunu metoda ikinci bir parametre vererek yaparız. </p>
+
+
+<a class="buton" href="dizi_ornek_7.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+
+<p> Metnin içinde kelime aramak için ayrıca search() metodu vardır. Bu metod indexOf ile aynı çalışır ama search() metodu çok daha güçlüdür.</p>
+<p> Çok daha fazla parametre alır. Daha fazla seçeneğe sahiptir.</p>
+
+<br>&nbsp;
+
+<h2>String'i parçalara ayırma<h2>
+<p>JavaScript ile çoğu zaman metinler üzerinde işlemler yaparız. </p>
+<p>Bazen bir metnin içinde kelime arar bazen de metnin içinden belirli bir bölümü çıkartmak isteriz. </p>
+<p>JavaScript bu tür metin işlemleri için bize 3 metod sunar: </p>
+<p> *slice(başlangıç, bitiş) </p>
+<p> *substring(başlangıç, bitiş)</p>
+<p> *substr(başlangıç, bitiş)</p>
+<p> Bu metodlar ile metinler üzerinde ayrıştırma işlemleri gerçekleştirilir.</p>
+<br>&nbsp;
+
+
+
+
+<h1> Sayılar<h1>
+<p> Farklı programlama dillerinde farklı sayı türleri vardır. Örneğin C# dilinde int, int16, decimal gibi farklı türler vardır.</p>
+<p>16 gibi bir sayıyı tutmak için int türü yeterli olurken, 3.15 gibi küsurlu değerleri tutmak için decimal kullanılır. </p>
+<p>JavaScript programlama dilinde tek bir sayı türü vardır. </p> 
+
+<img src="images/kod19.PNG">
+	<br>&nbsp;
+
+<p>Çok büyük veya çok küçük sayılar bilimsel gösterim ile yazılabilir: </p>
+<img src="images/kod20.PNG">
+<p>JavaScript diğer programlama dillerinden farklı olarak, int, short, long gibi farklı sayı türleri tanımlamaz. </p>
+<p> JavaScript sayıları her zaman 64-bit Floating Point (kayan nokta) olarak tutar.</p>
+<br>&nbsp;
+
+
+<h2>JavaScript NaN Nedir? (Not a Number / Bir Sayı Değil)<h2>
+<p> **NaN kelimesi JavaScript için ayrılmış bir kelimedir. Bir matematiksel işlemde sayı olmayan bir değer kullandığınızda</p>
+<p>sonuç NaN döner. Örneğin 100 / "armut" işleminin sonucu NaN'dır. </p>
+
+<a class="buton" href="dizi_ornek_8.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<p>*Fakat eğer string değer sayısal değer içeriyorsa sonuç sayı olur: </p>
+<a class="buton" href="dizi_ornek_9.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+
+<h1>JavaScript Programlama Dilinde Sayılar Nesne Olabilir<h1>
+<p>Daha önce stringde gördüğümüz gibi sayılar nesne olarak tanımlanabilir. </p>
+<p> Normalde JavaScript sayıları ilkel değerlere sahiptir: 1,255, 5678 gibi.</p>
+<p>Fakat var sayiNesne= new Number(123); şeklinde nesne olarak tanımlanabilir. </p>
+<p>Bu şekilde tanımlamak JavaScript'i yavaşlatır. O sebepten gerçekten ne yaptığınızı bilmiyorsanız kullanmayın.  </p>
+
+<h1> Diziler<h1>
+<p> JavaScript dizileri birden fazla değeri tek bir değişkende depolamak için kullanılır.</p>
+<a class="buton" href="dizi_ornek_10.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+ <h2>Dizi nedir?<h2>
+ <p>Dizi özel bir çeşit değişkendir, tek seferde birden fazla değeri barındırabilir. </p>
+ <p> Eğer bir listeniz varsa (örneğin araba isimleri listesi), her bir araba ismini değişkenlerde şöyle saklayabilirdiniz: </p>
+ <p>var araba1 = "araba1"; </p>
+ <p> var araba2 = "araba2";</p>
+ <p>var araba3 = "araba3"; </p>
+ <p>Ancak, araba isimleri içinden tek bir tanesini bulmanız gerektiğinde ne yapacaktınız? Ve 3 tane değil de 300 araba ismi olsaydı? </p>
+ <p>Çözümü bir dizi kullanmak! </p>
+ <p>Bir dizi tek bir isim altında birden fazla değeri saklayabilir, ve siz de index numarası yardımıyla istediğiniz değere ulaşabilirsiniz.
+</p>
+<br>&nbsp;
+<h2>Dizi Oluşturmak<h2>
+<p>Bir JavaScript Dizisi oluşturmanın en kolay yolu köşeli parantezleri kullanmaktır. </p>
+ <p> Yazımı şu şekildedir: var dizi_ismi = [oge1, oge2, ...]; </p>
+ <a class="buton" href="dizi_ornek_11.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+  <p>Boşluklar ve satır araları önemli değildir. Dizi oluşturma birkaç satırda birden de yapılabilir: </p>
+   <a class="buton" href="dizi_ornek_12.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<img src="images/kod21.PNG">
+ <br>&nbsp;
+ <h2>JavaScript "new" Anahtar Kelimesini Kullanmak<h2>
+ <p>Bu örnek bir dizi oluşturur ve içine değerler atar: </p>
+  <a class="buton" href="dizi_ornek_13.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<img src="images/kod22.PNG">
+<br>&nbsp;
+<h2>Dizi Elemanını Değiştirmek<h2>
+<p> Bu örnek ifade, arabalar dizisinin ilk elemanının değerini değiştirir:</p>
+  <a class="buton" href="dizi_ornek_14.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+<h2>Bütün Diziye Erişmek<h2>
+<p> JavaScript ile tüm diziye birden erişmek için sadece dizinin adını kullanmak yeterlidir:</p>
+ <a class="buton" href="dizi_ornek_15.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+ 
+ <h2>Diziler Objedir<h2>
+ <p>Diziler özel bir tür objedir. JavaScript typeof özelliği diziler için kullanıldığında geriye "object" değerini döndürür. </p>
+  <p>Ama JavaScript dizileri en iyi dizi olarak ifade edilebilirler. </p>
+  <p>*** Diziler elemanlarına erişmek için numaraları kullanırlar. Bu örnekte insan[0], Ali değerini döndürür: </p>
+   <a class="buton" href="dizi_ornek_16.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+  
+ <p> ***Objeler elemanlarına erişmek için isimleri kullanırlar. Bu örnekte, insan.ad geriye Ali değerini döndürür:</p>
+  <a class="buton" href="dizi_ornek_17.html">
+	<span>örneği incele</span></a> 
+<p>Uyarı: Kodu incelemek için örneği incele dedikten sonra CTRL+U tuşuna basınız</p>
+<br>&nbsp;
+  
+ 
+</body>
+</html>
