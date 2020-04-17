@@ -4,7 +4,7 @@ background-color:#DDA0DD;
 font-family:Comic Sans MS;
 width: 1100px;
 margin:100px auto;
-background:url(../pages/images/hw2examples/abc.png);
+background:url(../pages/hw2examples/images/abc.png);
  background-size: cover;    /*arka planı ekrana sığdırdı*/
 	background-repeat:no-repeat;
 background-attachment: fixed;
